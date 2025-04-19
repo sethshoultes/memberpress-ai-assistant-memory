@@ -1,0 +1,157 @@
+/**
+ * MemberPress AI Assistant - Memory Admin CSS
+ */
+
+/* Memory Settings Tab */
+.mpai-settings-section {
+    margin-bottom: 30px;
+}
+
+.mpai-setting-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.mpai-setting-label {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.mpai-setting-label label {
+    font-weight: 600;
+}
+
+.mpai-setting-field {
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.mpai-setting-field input[type="text"],
+.mpai-setting-field input[type="number"],
+.mpai-setting-field select {
+    width: 100%;
+    max-width: 400px;
+}
+
+.mpai-setting-description {
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+}
+
+.mpai-setting-submit {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.mpai-setting-submit .button {
+    margin-right: 10px;
+}
+
+/* Toggle Switch */
+.mpai-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.mpai-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.mpai-toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.mpai-toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.mpai-toggle input:checked + .mpai-toggle-slider {
+    background-color: #2196F3;
+}
+
+.mpai-toggle input:focus + .mpai-toggle-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.mpai-toggle input:checked + .mpai-toggle-slider:before {
+    transform: translateX(30px);
+}
+
+/* Memory Stats Section */
+.mpai-memory-stats-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.mpai-memory-stats-section h3 {
+    margin-top: 0;
+}
+
+.mpai-memory-stat-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.mpai-memory-stat-label {
+    font-weight: 600;
+    width: 200px;
+}
+
+.mpai-memory-stat-value {
+    font-size: 16px;
+}
+
+#mpai-memory-types ul {
+    margin-left: 20px;
+}
+
+#mpai-memory-types li {
+    margin-bottom: 5px;
+}
+
+#mpai-latest-memories table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#mpai-latest-memories th {
+    background-color: #f0f0f0;
+    padding: 8px;
+    text-align: left;
+}
+
+#mpai-latest-memories td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#mpai-memory-stats-loading {
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+}
